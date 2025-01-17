@@ -1,17 +1,8 @@
-import dash
-from dash import html
+import streamlit as st
 
-# Initialize the Dash app
-app = dash.Dash(__name__)
-app.title = "Hello World App"
+# Set the title of the app
+st.title("Hello World App")
 
-# Define the layout of the app
-app.layout = html.Div(
-    children=[
-        html.H1("Hello, World!", style={"textAlign": "center", "marginTop": "20%"})
-    ]
-)
+# Display "Hello, World!" as the main content
+st.write("Hello, World!")
 
-# Run the app
-if __name__ == '__main__':
-    app.run_server(debug=True, host="0.0.0.0", port=8080)
