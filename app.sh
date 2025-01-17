@@ -1,1 +1,1 @@
-python script2.py
+streamlit run script2.py
